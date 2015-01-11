@@ -19,6 +19,10 @@ function newBootstrapModal(){
 		bodyElement.innerHTML = '<p>' + content + '</p>';
 		return this;
 	};
+	modal.addContent = function(content){
+		bodyElement.innerHTML += '<p>' + content + '</p>';
+		return this;
+	};
 	modal.hide = function(content){
 		modal.beforeClose();
 		$(mainElement).modal('hide');
